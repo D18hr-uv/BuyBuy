@@ -11,14 +11,6 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-/**
- * Fetches the list of products from the API and updates the state.
- * While fetching, sets the loading state to true.
- * On successful fetch, updates the products state and clears any error.
- * On failure, sets an error message.
- * Finally, sets the loading state to false regardless of the outcome.
- */
-
   const fetchProducts = async () => {
     try {
       setLoading(true);
